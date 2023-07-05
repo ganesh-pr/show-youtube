@@ -7,9 +7,11 @@ const WatchPage = () => {
   const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
   const id = searchParams.get("v");
+
   useEffect(() => {
     dispatch(closeMenu());
-  }, []);
+  }, [dispatch]);
+
   return (
     <div>
       <iframe
