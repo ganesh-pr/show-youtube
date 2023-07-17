@@ -12,8 +12,20 @@ const WatchPage = () => {
     dispatch(closeMenu());
   }, [dispatch]);
 
+  // useEffect(() => {
+  //    getVideo();
+  // });
+
+  // const getVideo = async () => {
+  //   const video = await fetch(
+  //     "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&key=AIzaSyClF1qUUsS0kNkLA26-z76Vnh-9CJnnkJ8&id=Yb3k9Z58ITc"
+  //   );
+  //   const data = await video.json();
+  //   console.log("video data", data);
+  // };
+
   return (
-    <div>
+    <div className="mx-28 my-5">
       <iframe
         width="1200"
         height="600"
